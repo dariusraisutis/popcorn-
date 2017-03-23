@@ -35,6 +35,8 @@
             this.tbPassword = new MetroFramework.Controls.MetroTextBox();
             this.btnLogIn = new MetroFramework.Controls.MetroButton();
             this.btnCancel = new MetroFramework.Controls.MetroButton();
+            this.imageBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +50,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(103, 61);
+            this.metroLabel1.Location = new System.Drawing.Point(142, 96);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(75, 19);
             this.metroLabel1.TabIndex = 1;
@@ -57,7 +59,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(103, 100);
+            this.metroLabel2.Location = new System.Drawing.Point(142, 135);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(64, 19);
             this.metroLabel2.TabIndex = 2;
@@ -78,7 +80,7 @@
             this.tbUserName.CustomButton.UseSelectable = true;
             this.tbUserName.CustomButton.Visible = false;
             this.tbUserName.Lines = new string[0];
-            this.tbUserName.Location = new System.Drawing.Point(216, 61);
+            this.tbUserName.Location = new System.Drawing.Point(255, 96);
             this.tbUserName.MaxLength = 32767;
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.PasswordChar = '\0';
@@ -108,7 +110,7 @@
             this.tbPassword.CustomButton.UseSelectable = true;
             this.tbPassword.CustomButton.Visible = false;
             this.tbPassword.Lines = new string[0];
-            this.tbPassword.Location = new System.Drawing.Point(216, 100);
+            this.tbPassword.Location = new System.Drawing.Point(255, 135);
             this.tbPassword.MaxLength = 32767;
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '\0';
@@ -125,7 +127,7 @@
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(216, 158);
+            this.btnLogIn.Location = new System.Drawing.Point(255, 193);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
             this.btnLogIn.TabIndex = 5;
@@ -134,18 +136,27 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(306, 158);
+            this.btnCancel.Location = new System.Drawing.Point(345, 193);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseSelectable = true;
             // 
+            // imageBox
+            // 
+            this.imageBox.Location = new System.Drawing.Point(14, 15);
+            this.imageBox.Name = "imageBox";
+            this.imageBox.Size = new System.Drawing.Size(100, 100);
+            this.imageBox.TabIndex = 7;
+            this.imageBox.TabStop = false;
+            // 
             // frmLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 262);
+            this.Controls.Add(this.imageBox);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.tbPassword);
@@ -153,8 +164,12 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "frmLogIn";
+            this.Resizable = false;
             this.Text = "Log In";
+            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,6 +184,7 @@
         private MetroFramework.Controls.MetroTextBox tbPassword;
         private MetroFramework.Controls.MetroButton btnLogIn;
         private MetroFramework.Controls.MetroButton btnCancel;
+        private System.Windows.Forms.PictureBox imageBox;
     }
 }
 

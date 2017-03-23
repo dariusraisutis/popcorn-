@@ -17,6 +17,7 @@ namespace Popcorn_
         public frmLogIn()
         {
             InitializeComponent();
+            imageBox.ImageLocation = @"C:\Users\cob11.LYTC\Desktop\GitHub\popcorn--master\Popcorn+\Popcorn+\bin\PopcornLogo.png";
         }
     }
 }
