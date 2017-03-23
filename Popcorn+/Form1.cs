@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
+
 
 namespace Popcorn_
 {
-    public partial class Form1 : Form
+    public partial class frmLogIn : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public frmLogIn()
         {
             InitializeComponent();
         }
