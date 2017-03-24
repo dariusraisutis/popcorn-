@@ -9,15 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
 
-
 namespace Popcorn_
 {
-    public partial class frmLogIn : MetroFramework.Forms.MetroForm
+    public partial class MainScreen : MetroFramework.Forms.MetroForm
     {
-        public frmLogIn()
+        public MainScreen()
         {
             InitializeComponent();
-            imageBox.ImageLocation = @"C:\Users\cob11.LYTC\Desktop\GitHub\popcorn--master\Popcorn+\Popcorn+\bin\PopcornLogo.png";
         }
     }
 }
